@@ -1,0 +1,163 @@
+:root{
+    --color-fff: #fff;
+    --color-c7c7c7: #c7c7c7;
+    --color_1D2939: #1D2939;
+    --color_E5E5E5: #E5E5E5;
+    --color_input-border: rgba(229, 229, 229, 0.8);
+    --color_input-focus: rgba(29, 41, 57, 1);
+    --color_344054: #344054;
+    --color_A7A7A7: #A7A7A7;
+    --color__f1f1f1: #f1f1f1;
+}
+body{
+    font-family: 'YekanBakh-Regular';
+    background-color: var(--color-c7c7c7);
+}
+.panel{
+    width: 100%;
+    max-width: 59.4rem;
+    background-color: var(--color-fff);
+    margin: 10rem auto 10rem;
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+    color: var(--color_1D2939);
+}
+.panel__header{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.panel__title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'YekanBakh-Heavy';
+    font-size: 3.2rem;
+}
+.panel__caption{
+    width: 100%;
+    text-align: center;
+    font-family: 'YekanBakh-Medium';
+    font-size: 1.8rem;
+}
+.form{
+
+}
+.form__row{
+    margin-bottom: 2rem;
+}
+.form__label{
+    position: relative;
+    font-family: 'YekanBakh-Bold';
+    font-size: 1.4rem;
+}
+.form__label::after{
+    content: '*';
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    color: red;
+    font-size: 1.2rem;
+}
+.form__input{
+   width: 100%;
+    border: 1px solid var(--color_input-border);
+    border-radius: .4rem;
+    padding: 0 1.6rem;
+    font-size: 1.4rem;
+    font-family: 'YekanBakh-Medium';
+    height: 5.2rem;
+    color: var(--color_1D2939);
+    outline: none;
+    margin-top: .7rem;
+}
+.form__input::placeholder{
+    font-size: 1.4rem;
+    font-family: 'YekanBakh-Regular';
+
+}
+.form__input:focus{
+    border: 0.05rem solid var(--color_input-focus);
+}
+.form__btn {
+    width: 100%;
+    height: 5.2rem;
+    outline: none;
+    border: none;
+    color: var(--color-fff);
+    background-color: var(--color_1D2939);
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    font-family: 'YekanBakh-Medium';
+    font-size: 1.6rem;
+}
+
+.form__btn:hover {
+    background-color: var(--color_344054);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.form__btn:active {
+    transform: translateY(0);
+    box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+.panel__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.panel__line span:not(:nth-child(2)){
+    flex-grow: 1;
+    display: block;
+    height: 0;
+    border-bottom: .08rem solid var(--color_E5E5E5);
+}
+.panel__line span:nth-child(2){
+    font-family: 'YekanBakh-Medium';
+    font-size: 1.8rem;
+    color: var(--color_A7A7A7);
+}
+.panel__apps{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.panel__app {
+    height: 5.2rem;
+    border: 1px solid var(--color_input-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.panel__app:hover {
+    background-color: var(--color__f1f1f1); /* یه رنگ خنثی و ملایم برای هاور */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel__app span{
+    font-size: 1.6rem;
+    color: var(--color_1D2939);
+    font-family: lato-regular;
+}
+.panel__icon{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
+
+
+
